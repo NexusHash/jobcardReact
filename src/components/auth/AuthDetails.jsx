@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { auth } from '../../firebase/firebase'
 import { onAuthStateChanged, updateCurrentUser, signOut } from 'firebase/auth'
 import { Route } from 'react-router'
-import Organisation from '../../pages/org/org'
+import Chat from '../../pages/chat/chat'
 
 const AuthDetails = () => {
 
@@ -20,7 +20,7 @@ const AuthDetails = () => {
 
         return () => {
             listen();
-            <Route path='organisation' element={<Organisation/>}/>
+            <Route path='chat' element={<Chat/>}/>
         }
     }, [])
 

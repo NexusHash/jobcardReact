@@ -1,0 +1,19 @@
+.lparent {
+    display: flex;
+    flex-direction: row;
+    background-color: #535461;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .fleftbar {
+        display: flex;
+        flex: 2;
+    }
+
+    .leftbar {
+        display: flex;
+        flex: 3;
+    }
+}
